@@ -1,6 +1,9 @@
-@charset "UTF-8"
-* {} body {margin: 0;}
-footer {background-color: red; color: white; line-height: 2em;
-        padding: 5px; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+@charset "UTF-8";
+
+body {margin: 0;}
+
+footer {background-color: black; color: white; line-height: .8em; text-align: center;
+        padding: 5px; padding-top: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+footer div {display: inline;}
 footer a {color: yellow; text-decoration: none;}
-footer a:hover {text-decoration: underline;} footer p {text-align: center;}
+footer a:hover {text-decoration: underline;} 
