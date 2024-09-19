@@ -1,4 +1,4 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
 * {margin: 0; padding: 0;}
 
@@ -8,7 +8,7 @@ body {background: url('../imagens/fundo-madeira.jpg') no-repeat top center fixed
 main {height: 100vh; position: relative;}
 
 /* voltar para a página principal */
-#pagpri {text-align: center; padding-top: 10px;} 
+#pagpri {text-align: right; padding-top: 10px; width: 98%;} 
 #pagpri a {color: white; text-decoration: none;}
 #pagpri a:hover {text-decoration: underline;}
 
