@@ -8,34 +8,43 @@
     <link rel="stylesheet" href="../layout/rodape.css">
     <title>iFrame Interno</title>
     <style>
+        body {background-color: lightcoral;}
+        body section {width: 60%; margin: auto; background-color: white;
+                        padding-top: 10px; margin-top: 20px;}
         h1, main {margin: 20px;}
-        iframe {height: 300px; width: 95vw;}
-        section {text-align: center;} 
+        iframe {height: 330px; width: 50vw; padding: 0 10px 0 10px;}
+        #iframe-interno {margin: auto;}
+        main div {text-align: center;} 
+        #voltar {padding-bottom: 20px;}
     </style>
 </head>
 <body>
-    <header>
-        <h1>Páginas internas no iframe</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="iFrameInterno-1.html" target="frame">Página 1</a></li>
-            <li><a href="iFrameInterno-2.html" target="frame">Página 2</a></li>
-            <li><a href="iFrameInterno-3.html" target="frame">Página 3</a></li>
-        </ul>
-    </nav>
-    <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam deserunt mollitia omnis iusto illo eligendi, minima aut sit ut nobis labore possimus harum! Fugiat asperiores quae architecto aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae non, dicta recusandae ad odit asperiores nam ipsa, earum similique, debitis maiores delectus exercitationem qui ratione dignissimos? A non quo ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eveniet magni voluptatem! Veniam tenetur aut alias nam atque sed itaque ducimus cum rerum, quam et! Nostrum modi distinctio quam ullam?</p>
-        <iframe name="frame" frameborder="0" style="background-color:lightgrey;" srcdoc="<h2>Escolha uma das opções acima:</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, minima! Aspernatur eius autem corrupti quos reiciendis consequuntur enim quod totam, minim quibusdam!</p><img src='../imagens/html-css.png'>">
-        <!-- o 'srcdoc' só deve ser usado com códigos mais simples. Caso seja necessário um código mais complexo é melhor usar o 'src' carregando um arquivo externo, ou seja, carregando outra página.-->
-            <p>- Infelizmente seu navegador não é compatível -</p>
-        </iframe>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam deserunt mollitia omnis iusto illo eligendi, minima aut sit ut nobis labore possimus harum! Fugiat asperiores quae architecto aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae non, dicta recusandae ad odit asperiores nam ipsa, earum similique, debitis maiores delectus exercitationem qui ratione dignissimos? A non quo ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eveniet magni voluptatem! Veniam tenetur aut alias nam atque sed itaque ducimus cum rerum, quam et! Nostrum modi distinctio quam ullam?</p>
-        <br>
-        <section>
-            <a href="../index.html">Home</a>
-        </section>
-    </main>
+    <section>
+        <header>
+            <h1>Páginas internas no iframe</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="iFrameInterno-1.html" target="frame">Página 1</a></li>
+                <li><a href="iFrameInterno-2.html" target="frame">Página 2</a></li>
+                <li><a href="iFrameInterno-3.html" target="frame">Página 3</a></li>
+            </ul>
+        </nav>
+        <main>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam deserunt mollitia omnis iusto illo eligendi, minima aut sit ut nobis labore possimus harum! Fugiat asperiores quae architecto aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae non, dicta recusandae ad odit asperiores nam ipsa, earum similique, debitis maiores delectus exercitationem qui ratione dignissimos? A non quo ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eveniet magni voluptatem! Veniam tenetur aut alias nam atque sed itaque ducimus cum rerum, quam et! Nostrum modi distinctio quam ullam?</p>
+            <div id="iframe-interno">
+                <iframe name="frame" frameborder="0" style="background-color:lightgrey;" srcdoc="<h2>Escolha uma das opções acima:</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, minima! Aspernatur eius autem corrupti quos reiciendis consequuntur enim quod totam, minim quibusdam!</p><img src='../imagens/html-css.png'>">
+                <!-- o 'srcdoc' só deve ser usado com códigos mais simples. Caso seja necessário um código mais complexo é melhor usar o 'src' carregando um arquivo externo, ou seja, carregando outra página.-->
+                    <p>- Infelizmente seu navegador não é compatível -</p>
+                </iframe>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam deserunt mollitia omnis iusto illo eligendi, minima aut sit ut nobis labore possimus harum! Fugiat asperiores quae architecto aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae non, dicta recusandae ad odit asperiores nam ipsa, earum similique, debitis maiores delectus exercitationem qui ratione dignissimos? A non quo ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eveniet magni voluptatem! Veniam tenetur aut alias nam atque sed itaque ducimus cum rerum, quam et! Nostrum modi distinctio quam ullam?</p>
+            <br>
+            <div id="voltar">
+                <a href="../index.html">Voltar</a>
+            </div>
+        </main>
+    </section>
     <footer>
         &copy;2023 Desenvolvido por LHS DevWeb. Todos os direitos reservados.
         <p>
