@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <title>iFrames Externos</title>
+    <style>
+        * {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif;}
+        h1 {text-align: center; margin: 40px;}
+        h2 {text-decoration: underline; margin-bottom: 10px;}
+        h3 {margin-bottom: 10px;}
+        section {margin: auto; max-width: 50vw; padding: 20px; background-color: lightgray;}
+        section div {margin-bottom: 20px;}
+        #mapa iframe, #googledocs iframe {max-width: 100%; margin-bottom: 20px;}
+        body > div {text-align: center; padding: 40px;}
+        @media (max-width: 850px) {h1 {font-size: 1.2em;} section {max-width: 70vw;}}
+        @media (max-width: 600px) {h1 {font-size: medium;} h3 {font-size: small;}}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bons exemplos com iframes de sites de terceiros</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Vídeos do YouTube</h2>
+
+            <h3>Curso de HTML5 e CSS3 do Curso em Vídeo</h3>
+            <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://www.youtube.com/embed/videoseries?si=HILEtl-AVb5PVh5k&amp;list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" title="YouTube video player" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+            <h3>Curso de JavaScript do Curso em Vídeo</h3>
+            <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://www.youtube.com/embed/videoseries?si=BjTQInIM3B2i-XCN&amp;list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" title="YouTube video player" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        </section>
+        
+        <section>
+            <h2>Vídeos do Vimeo</h2>
+            
+            <h3>Cinema</h3>
+            <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/981589357?badge=0" title="Vimeo video player" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+            <h3>Animação</h3>
+            <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/342039599?h=cf4751f9ff" title="Vimeo video player" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        </section>
+
+        <section id="mapa">
+            <h2>Mapa do Google</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.106134948141!2d-34.92973732573808!3d-8.090658080903477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1eeaea72ea19%3A0x616aa73f26cbe5b8!2sR.%20Tuparetama%2C%20Recife%20-%20PE%2C%2050771-460!5e0!3m2!1spt-BR!2sbr!4v1687456917168!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2>Mapa do Waze</h2>
+            <iframe src="https://embed.waze.com/iframe?zoom=17&lat=-8.092781&lon=-34.930569&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+        </section>
+
+        <section id="googledocs">
+            <h2>Google Slides</h2>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS-uIx68nPB3UXpP9LgdJFZb9tkJTY4ojy62dWusmudWBRqUWah5sXa6f-v9JDMT1XWQJVUMP2sRTyy/embed?start=true&loop=false&delayms=3000" frameborder="0" width="900" height="500" allowfullscreen="true"   mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <h2>Google Planilhas</h2>
+            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTo6EAeZNz6csRsa_gIz2uGlOfFoA09fhK3-PwFVb8J4ONxgj9CckbIUr-gPLMQOmbcQ-vHZlw9tysf/pubhtml?widget=true&amp;headers=false" width="900" height="500"></iframe>
+        </section>
+    </main>
+    <div>
+        <a href="../index.html">Voltar</a>
+    </div>
+</body>
+</html>
