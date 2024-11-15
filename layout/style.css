@@ -68,7 +68,7 @@ footer p {margin: 0; padding: 0;}
 @media (max-width: 400px) {
     h1 {font-size: .8em;}
     #paragrafo1 {display: block;}
-    .espaço {display: none;}
+    #paragrafo1 .espaço {display: none;}
     #paragrafo3 {display: none;}
     #paragrafo4 {display: block;}
 } 
